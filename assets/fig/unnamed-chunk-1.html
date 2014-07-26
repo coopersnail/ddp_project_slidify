@@ -1,0 +1,2830 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://nvd3.org/assets/css/nv.d3.css'>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='http://nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 600px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart1126a106a171' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart1126a106a171()
+    });
+    function drawchart1126a106a171(){  
+      var opts = {
+ "dom": "chart1126a106a171",
+"width":    600,
+"height":    400,
+"x": "age",
+"y": "percent",
+"group": "type",
+"type": "stackedAreaChart",
+"id": "chart1126a106a171" 
+},
+        data = [
+ {
+ "age": 10,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 55 
+},
+{
+ "age": 10,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 55 
+},
+{
+ "age": 10,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 55 
+},
+{
+ "age": 10,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 55 
+},
+{
+ "age": 10,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 55 
+},
+{
+ "age": 11,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 54 
+},
+{
+ "age": 11,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 54 
+},
+{
+ "age": 11,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 54 
+},
+{
+ "age": 11,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 54 
+},
+{
+ "age": 11,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 54 
+},
+{
+ "age": 12,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 53 
+},
+{
+ "age": 12,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 53 
+},
+{
+ "age": 12,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 53 
+},
+{
+ "age": 12,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 53 
+},
+{
+ "age": 12,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 53 
+},
+{
+ "age": 13,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 52 
+},
+{
+ "age": 13,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 52 
+},
+{
+ "age": 13,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 52 
+},
+{
+ "age": 13,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 52 
+},
+{
+ "age": 13,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 52 
+},
+{
+ "age": 14,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 51 
+},
+{
+ "age": 14,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 51 
+},
+{
+ "age": 14,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 51 
+},
+{
+ "age": 14,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 51 
+},
+{
+ "age": 14,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 51 
+},
+{
+ "age": 15,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 50 
+},
+{
+ "age": 15,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 50 
+},
+{
+ "age": 15,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 50 
+},
+{
+ "age": 15,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 50 
+},
+{
+ "age": 15,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 50 
+},
+{
+ "age": 16,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 49 
+},
+{
+ "age": 16,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 49 
+},
+{
+ "age": 16,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 49 
+},
+{
+ "age": 16,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 49 
+},
+{
+ "age": 16,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 49 
+},
+{
+ "age": 17,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 48 
+},
+{
+ "age": 17,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 48 
+},
+{
+ "age": 17,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 48 
+},
+{
+ "age": 17,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 48 
+},
+{
+ "age": 17,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 48 
+},
+{
+ "age": 18,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 47 
+},
+{
+ "age": 18,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 47 
+},
+{
+ "age": 18,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 47 
+},
+{
+ "age": 18,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 47 
+},
+{
+ "age": 18,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 47 
+},
+{
+ "age": 19,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 46 
+},
+{
+ "age": 19,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 46 
+},
+{
+ "age": 19,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 46 
+},
+{
+ "age": 19,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 46 
+},
+{
+ "age": 19,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 46 
+},
+{
+ "age": 20,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 45 
+},
+{
+ "age": 20,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 45 
+},
+{
+ "age": 20,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 45 
+},
+{
+ "age": 20,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 45 
+},
+{
+ "age": 20,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 45 
+},
+{
+ "age": 21,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 44 
+},
+{
+ "age": 21,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 44 
+},
+{
+ "age": 21,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 44 
+},
+{
+ "age": 21,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 44 
+},
+{
+ "age": 21,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 44 
+},
+{
+ "age": 22,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 43 
+},
+{
+ "age": 22,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 43 
+},
+{
+ "age": 22,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 43 
+},
+{
+ "age": 22,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 43 
+},
+{
+ "age": 22,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 43 
+},
+{
+ "age": 23,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 42 
+},
+{
+ "age": 23,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 42 
+},
+{
+ "age": 23,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 42 
+},
+{
+ "age": 23,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 42 
+},
+{
+ "age": 23,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 42 
+},
+{
+ "age": 24,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 41 
+},
+{
+ "age": 24,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 41 
+},
+{
+ "age": 24,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 41 
+},
+{
+ "age": 24,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 41 
+},
+{
+ "age": 24,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 41 
+},
+{
+ "age": 25,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 40 
+},
+{
+ "age": 25,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 40 
+},
+{
+ "age": 25,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 40 
+},
+{
+ "age": 25,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 40 
+},
+{
+ "age": 25,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 40 
+},
+{
+ "age": 26,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 39 
+},
+{
+ "age": 26,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 39 
+},
+{
+ "age": 26,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 39 
+},
+{
+ "age": 26,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 39 
+},
+{
+ "age": 26,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 39 
+},
+{
+ "age": 27,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 38 
+},
+{
+ "age": 27,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 38 
+},
+{
+ "age": 27,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 38 
+},
+{
+ "age": 27,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 38 
+},
+{
+ "age": 27,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 38 
+},
+{
+ "age": 28,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 37 
+},
+{
+ "age": 28,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 37 
+},
+{
+ "age": 28,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 37 
+},
+{
+ "age": 28,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 37 
+},
+{
+ "age": 28,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 37 
+},
+{
+ "age": 29,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 36 
+},
+{
+ "age": 29,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 36 
+},
+{
+ "age": 29,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 36 
+},
+{
+ "age": 29,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 36 
+},
+{
+ "age": 29,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 36 
+},
+{
+ "age": 30,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 35 
+},
+{
+ "age": 30,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 35 
+},
+{
+ "age": 30,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 35 
+},
+{
+ "age": 30,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 35 
+},
+{
+ "age": 30,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 35 
+},
+{
+ "age": 31,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 34 
+},
+{
+ "age": 31,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 34 
+},
+{
+ "age": 31,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 34 
+},
+{
+ "age": 31,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 34 
+},
+{
+ "age": 31,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 34 
+},
+{
+ "age": 32,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 33 
+},
+{
+ "age": 32,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 33 
+},
+{
+ "age": 32,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 33 
+},
+{
+ "age": 32,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 33 
+},
+{
+ "age": 32,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 33 
+},
+{
+ "age": 33,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 32 
+},
+{
+ "age": 33,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 32 
+},
+{
+ "age": 33,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 32 
+},
+{
+ "age": 33,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 32 
+},
+{
+ "age": 33,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 32 
+},
+{
+ "age": 34,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 31 
+},
+{
+ "age": 34,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 31 
+},
+{
+ "age": 34,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 31 
+},
+{
+ "age": 34,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 31 
+},
+{
+ "age": 34,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 31 
+},
+{
+ "age": 35,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 30 
+},
+{
+ "age": 35,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 30 
+},
+{
+ "age": 35,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 30 
+},
+{
+ "age": 35,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 30 
+},
+{
+ "age": 35,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 30 
+},
+{
+ "age": 36,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 29 
+},
+{
+ "age": 36,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 29 
+},
+{
+ "age": 36,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 29 
+},
+{
+ "age": 36,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 29 
+},
+{
+ "age": 36,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 29 
+},
+{
+ "age": 37,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 28 
+},
+{
+ "age": 37,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 28 
+},
+{
+ "age": 37,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 28 
+},
+{
+ "age": 37,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 28 
+},
+{
+ "age": 37,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 28 
+},
+{
+ "age": 38,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 27 
+},
+{
+ "age": 38,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 27 
+},
+{
+ "age": 38,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 27 
+},
+{
+ "age": 38,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 27 
+},
+{
+ "age": 38,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 27 
+},
+{
+ "age": 39,
+"type": "US Stocks",
+"percent":             63,
+"years_till_retirement": 26 
+},
+{
+ "age": 39,
+"type": "International Stocks",
+"percent":             27,
+"years_till_retirement": 26 
+},
+{
+ "age": 39,
+"type": "US Bonds",
+"percent":              8,
+"years_till_retirement": 26 
+},
+{
+ "age": 39,
+"type": "International Bonds",
+"percent":              2,
+"years_till_retirement": 26 
+},
+{
+ "age": 39,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 26 
+},
+{
+ "age": 40,
+"type": "US Stocks",
+"percent":             61,
+"years_till_retirement": 25 
+},
+{
+ "age": 40,
+"type": "International Stocks",
+"percent":             26,
+"years_till_retirement": 25 
+},
+{
+ "age": 40,
+"type": "US Bonds",
+"percent":           10.5,
+"years_till_retirement": 25 
+},
+{
+ "age": 40,
+"type": "International Bonds",
+"percent":            2.5,
+"years_till_retirement": 25 
+},
+{
+ "age": 40,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 25 
+},
+{
+ "age": 41,
+"type": "US Stocks",
+"percent":             61,
+"years_till_retirement": 24 
+},
+{
+ "age": 41,
+"type": "International Stocks",
+"percent":             26,
+"years_till_retirement": 24 
+},
+{
+ "age": 41,
+"type": "US Bonds",
+"percent":           10.5,
+"years_till_retirement": 24 
+},
+{
+ "age": 41,
+"type": "International Bonds",
+"percent":            2.5,
+"years_till_retirement": 24 
+},
+{
+ "age": 41,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 24 
+},
+{
+ "age": 42,
+"type": "US Stocks",
+"percent":             61,
+"years_till_retirement": 23 
+},
+{
+ "age": 42,
+"type": "International Stocks",
+"percent":             26,
+"years_till_retirement": 23 
+},
+{
+ "age": 42,
+"type": "US Bonds",
+"percent":           10.5,
+"years_till_retirement": 23 
+},
+{
+ "age": 42,
+"type": "International Bonds",
+"percent":            2.5,
+"years_till_retirement": 23 
+},
+{
+ "age": 42,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 23 
+},
+{
+ "age": 43,
+"type": "US Stocks",
+"percent":             61,
+"years_till_retirement": 22 
+},
+{
+ "age": 43,
+"type": "International Stocks",
+"percent":             26,
+"years_till_retirement": 22 
+},
+{
+ "age": 43,
+"type": "US Bonds",
+"percent":           10.5,
+"years_till_retirement": 22 
+},
+{
+ "age": 43,
+"type": "International Bonds",
+"percent":            2.5,
+"years_till_retirement": 22 
+},
+{
+ "age": 43,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 22 
+},
+{
+ "age": 44,
+"type": "US Stocks",
+"percent":             61,
+"years_till_retirement": 21 
+},
+{
+ "age": 44,
+"type": "International Stocks",
+"percent":             26,
+"years_till_retirement": 21 
+},
+{
+ "age": 44,
+"type": "US Bonds",
+"percent":           10.5,
+"years_till_retirement": 21 
+},
+{
+ "age": 44,
+"type": "International Bonds",
+"percent":            2.5,
+"years_till_retirement": 21 
+},
+{
+ "age": 44,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 21 
+},
+{
+ "age": 45,
+"type": "US Stocks",
+"percent":           60.1,
+"years_till_retirement": 20 
+},
+{
+ "age": 45,
+"type": "International Stocks",
+"percent":           25.8,
+"years_till_retirement": 20 
+},
+{
+ "age": 45,
+"type": "US Bonds",
+"percent":           11.3,
+"years_till_retirement": 20 
+},
+{
+ "age": 45,
+"type": "International Bonds",
+"percent":            2.8,
+"years_till_retirement": 20 
+},
+{
+ "age": 45,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 20 
+},
+{
+ "age": 46,
+"type": "US Stocks",
+"percent":           60.1,
+"years_till_retirement": 19 
+},
+{
+ "age": 46,
+"type": "International Stocks",
+"percent":           25.8,
+"years_till_retirement": 19 
+},
+{
+ "age": 46,
+"type": "US Bonds",
+"percent":           11.3,
+"years_till_retirement": 19 
+},
+{
+ "age": 46,
+"type": "International Bonds",
+"percent":            2.8,
+"years_till_retirement": 19 
+},
+{
+ "age": 46,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 19 
+},
+{
+ "age": 47,
+"type": "US Stocks",
+"percent":           60.1,
+"years_till_retirement": 18 
+},
+{
+ "age": 47,
+"type": "International Stocks",
+"percent":           25.8,
+"years_till_retirement": 18 
+},
+{
+ "age": 47,
+"type": "US Bonds",
+"percent":           11.3,
+"years_till_retirement": 18 
+},
+{
+ "age": 47,
+"type": "International Bonds",
+"percent":            2.8,
+"years_till_retirement": 18 
+},
+{
+ "age": 47,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 18 
+},
+{
+ "age": 48,
+"type": "US Stocks",
+"percent":           60.1,
+"years_till_retirement": 17 
+},
+{
+ "age": 48,
+"type": "International Stocks",
+"percent":           25.8,
+"years_till_retirement": 17 
+},
+{
+ "age": 48,
+"type": "US Bonds",
+"percent":           11.3,
+"years_till_retirement": 17 
+},
+{
+ "age": 48,
+"type": "International Bonds",
+"percent":            2.8,
+"years_till_retirement": 17 
+},
+{
+ "age": 48,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 17 
+},
+{
+ "age": 49,
+"type": "US Stocks",
+"percent":           60.1,
+"years_till_retirement": 16 
+},
+{
+ "age": 49,
+"type": "International Stocks",
+"percent":           25.8,
+"years_till_retirement": 16 
+},
+{
+ "age": 49,
+"type": "US Bonds",
+"percent":           11.3,
+"years_till_retirement": 16 
+},
+{
+ "age": 49,
+"type": "International Bonds",
+"percent":            2.8,
+"years_till_retirement": 16 
+},
+{
+ "age": 49,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 16 
+},
+{
+ "age": 50,
+"type": "US Stocks",
+"percent":           54.9,
+"years_till_retirement": 15 
+},
+{
+ "age": 50,
+"type": "International Stocks",
+"percent":           23.5,
+"years_till_retirement": 15 
+},
+{
+ "age": 50,
+"type": "US Bonds",
+"percent":           17.3,
+"years_till_retirement": 15 
+},
+{
+ "age": 50,
+"type": "International Bonds",
+"percent":            4.3,
+"years_till_retirement": 15 
+},
+{
+ "age": 50,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 15 
+},
+{
+ "age": 51,
+"type": "US Stocks",
+"percent":           54.9,
+"years_till_retirement": 14 
+},
+{
+ "age": 51,
+"type": "International Stocks",
+"percent":           23.5,
+"years_till_retirement": 14 
+},
+{
+ "age": 51,
+"type": "US Bonds",
+"percent":           17.3,
+"years_till_retirement": 14 
+},
+{
+ "age": 51,
+"type": "International Bonds",
+"percent":            4.3,
+"years_till_retirement": 14 
+},
+{
+ "age": 51,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 14 
+},
+{
+ "age": 52,
+"type": "US Stocks",
+"percent":           54.9,
+"years_till_retirement": 13 
+},
+{
+ "age": 52,
+"type": "International Stocks",
+"percent":           23.5,
+"years_till_retirement": 13 
+},
+{
+ "age": 52,
+"type": "US Bonds",
+"percent":           17.3,
+"years_till_retirement": 13 
+},
+{
+ "age": 52,
+"type": "International Bonds",
+"percent":            4.3,
+"years_till_retirement": 13 
+},
+{
+ "age": 52,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 13 
+},
+{
+ "age": 53,
+"type": "US Stocks",
+"percent":           54.9,
+"years_till_retirement": 12 
+},
+{
+ "age": 53,
+"type": "International Stocks",
+"percent":           23.5,
+"years_till_retirement": 12 
+},
+{
+ "age": 53,
+"type": "US Bonds",
+"percent":           17.3,
+"years_till_retirement": 12 
+},
+{
+ "age": 53,
+"type": "International Bonds",
+"percent":            4.3,
+"years_till_retirement": 12 
+},
+{
+ "age": 53,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 12 
+},
+{
+ "age": 54,
+"type": "US Stocks",
+"percent":           54.9,
+"years_till_retirement": 11 
+},
+{
+ "age": 54,
+"type": "International Stocks",
+"percent":           23.5,
+"years_till_retirement": 11 
+},
+{
+ "age": 54,
+"type": "US Bonds",
+"percent":           17.3,
+"years_till_retirement": 11 
+},
+{
+ "age": 54,
+"type": "International Bonds",
+"percent":            4.3,
+"years_till_retirement": 11 
+},
+{
+ "age": 54,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 11 
+},
+{
+ "age": 55,
+"type": "US Stocks",
+"percent":           49.6,
+"years_till_retirement": 10 
+},
+{
+ "age": 55,
+"type": "International Stocks",
+"percent":           21.3,
+"years_till_retirement": 10 
+},
+{
+ "age": 55,
+"type": "US Bonds",
+"percent":           23.3,
+"years_till_retirement": 10 
+},
+{
+ "age": 55,
+"type": "International Bonds",
+"percent":            5.8,
+"years_till_retirement": 10 
+},
+{
+ "age": 55,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 10 
+},
+{
+ "age": 56,
+"type": "US Stocks",
+"percent":           49.6,
+"years_till_retirement": 9 
+},
+{
+ "age": 56,
+"type": "International Stocks",
+"percent":           21.3,
+"years_till_retirement": 9 
+},
+{
+ "age": 56,
+"type": "US Bonds",
+"percent":           23.3,
+"years_till_retirement": 9 
+},
+{
+ "age": 56,
+"type": "International Bonds",
+"percent":            5.8,
+"years_till_retirement": 9 
+},
+{
+ "age": 56,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 9 
+},
+{
+ "age": 57,
+"type": "US Stocks",
+"percent":           49.6,
+"years_till_retirement": 8 
+},
+{
+ "age": 57,
+"type": "International Stocks",
+"percent":           21.3,
+"years_till_retirement": 8 
+},
+{
+ "age": 57,
+"type": "US Bonds",
+"percent":           23.3,
+"years_till_retirement": 8 
+},
+{
+ "age": 57,
+"type": "International Bonds",
+"percent":            5.8,
+"years_till_retirement": 8 
+},
+{
+ "age": 57,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 8 
+},
+{
+ "age": 58,
+"type": "US Stocks",
+"percent":           49.6,
+"years_till_retirement": 7 
+},
+{
+ "age": 58,
+"type": "International Stocks",
+"percent":           21.3,
+"years_till_retirement": 7 
+},
+{
+ "age": 58,
+"type": "US Bonds",
+"percent":           23.3,
+"years_till_retirement": 7 
+},
+{
+ "age": 58,
+"type": "International Bonds",
+"percent":            5.8,
+"years_till_retirement": 7 
+},
+{
+ "age": 58,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 7 
+},
+{
+ "age": 59,
+"type": "US Stocks",
+"percent":           49.6,
+"years_till_retirement": 6 
+},
+{
+ "age": 59,
+"type": "International Stocks",
+"percent":           21.3,
+"years_till_retirement": 6 
+},
+{
+ "age": 59,
+"type": "US Bonds",
+"percent":           23.3,
+"years_till_retirement": 6 
+},
+{
+ "age": 59,
+"type": "International Bonds",
+"percent":            5.8,
+"years_till_retirement": 6 
+},
+{
+ "age": 59,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 6 
+},
+{
+ "age": 60,
+"type": "US Stocks",
+"percent":           44.4,
+"years_till_retirement": 5 
+},
+{
+ "age": 60,
+"type": "International Stocks",
+"percent":             19,
+"years_till_retirement": 5 
+},
+{
+ "age": 60,
+"type": "US Bonds",
+"percent":           29.3,
+"years_till_retirement": 5 
+},
+{
+ "age": 60,
+"type": "International Bonds",
+"percent":            7.3,
+"years_till_retirement": 5 
+},
+{
+ "age": 60,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 5 
+},
+{
+ "age": 61,
+"type": "US Stocks",
+"percent":           44.4,
+"years_till_retirement": 4 
+},
+{
+ "age": 61,
+"type": "International Stocks",
+"percent":             19,
+"years_till_retirement": 4 
+},
+{
+ "age": 61,
+"type": "US Bonds",
+"percent":           29.3,
+"years_till_retirement": 4 
+},
+{
+ "age": 61,
+"type": "International Bonds",
+"percent":            7.3,
+"years_till_retirement": 4 
+},
+{
+ "age": 61,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 4 
+},
+{
+ "age": 62,
+"type": "US Stocks",
+"percent":           44.4,
+"years_till_retirement": 3 
+},
+{
+ "age": 62,
+"type": "International Stocks",
+"percent":             19,
+"years_till_retirement": 3 
+},
+{
+ "age": 62,
+"type": "US Bonds",
+"percent":           29.3,
+"years_till_retirement": 3 
+},
+{
+ "age": 62,
+"type": "International Bonds",
+"percent":            7.3,
+"years_till_retirement": 3 
+},
+{
+ "age": 62,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 3 
+},
+{
+ "age": 63,
+"type": "US Stocks",
+"percent":           44.4,
+"years_till_retirement": 2 
+},
+{
+ "age": 63,
+"type": "International Stocks",
+"percent":             19,
+"years_till_retirement": 2 
+},
+{
+ "age": 63,
+"type": "US Bonds",
+"percent":           29.3,
+"years_till_retirement": 2 
+},
+{
+ "age": 63,
+"type": "International Bonds",
+"percent":            7.3,
+"years_till_retirement": 2 
+},
+{
+ "age": 63,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 2 
+},
+{
+ "age": 64,
+"type": "US Stocks",
+"percent":           44.4,
+"years_till_retirement": 1 
+},
+{
+ "age": 64,
+"type": "International Stocks",
+"percent":             19,
+"years_till_retirement": 1 
+},
+{
+ "age": 64,
+"type": "US Bonds",
+"percent":           29.3,
+"years_till_retirement": 1 
+},
+{
+ "age": 64,
+"type": "International Bonds",
+"percent":            7.3,
+"years_till_retirement": 1 
+},
+{
+ "age": 64,
+"type": "Short Term TIPS",
+"percent":              0,
+"years_till_retirement": 1 
+},
+{
+ "age": 65,
+"type": "US Stocks",
+"percent":           38.2,
+"years_till_retirement": 0 
+},
+{
+ "age": 65,
+"type": "International Stocks",
+"percent":           16.3,
+"years_till_retirement": 0 
+},
+{
+ "age": 65,
+"type": "US Bonds",
+"percent":             32,
+"years_till_retirement": 0 
+},
+{
+ "age": 65,
+"type": "International Bonds",
+"percent":            9.1,
+"years_till_retirement": 0 
+},
+{
+ "age": 65,
+"type": "Short Term TIPS",
+"percent":            4.4,
+"years_till_retirement": 0 
+},
+{
+ "age": 66,
+"type": "US Stocks",
+"percent":           38.2,
+"years_till_retirement": -1 
+},
+{
+ "age": 66,
+"type": "International Stocks",
+"percent":           16.3,
+"years_till_retirement": -1 
+},
+{
+ "age": 66,
+"type": "US Bonds",
+"percent":             32,
+"years_till_retirement": -1 
+},
+{
+ "age": 66,
+"type": "International Bonds",
+"percent":            9.1,
+"years_till_retirement": -1 
+},
+{
+ "age": 66,
+"type": "Short Term TIPS",
+"percent":            4.4,
+"years_till_retirement": -1 
+},
+{
+ "age": 67,
+"type": "US Stocks",
+"percent":           38.2,
+"years_till_retirement": -2 
+},
+{
+ "age": 67,
+"type": "International Stocks",
+"percent":           16.3,
+"years_till_retirement": -2 
+},
+{
+ "age": 67,
+"type": "US Bonds",
+"percent":             32,
+"years_till_retirement": -2 
+},
+{
+ "age": 67,
+"type": "International Bonds",
+"percent":            9.1,
+"years_till_retirement": -2 
+},
+{
+ "age": 67,
+"type": "Short Term TIPS",
+"percent":            4.4,
+"years_till_retirement": -2 
+},
+{
+ "age": 68,
+"type": "US Stocks",
+"percent":           38.2,
+"years_till_retirement": -3 
+},
+{
+ "age": 68,
+"type": "International Stocks",
+"percent":           16.3,
+"years_till_retirement": -3 
+},
+{
+ "age": 68,
+"type": "US Bonds",
+"percent":             32,
+"years_till_retirement": -3 
+},
+{
+ "age": 68,
+"type": "International Bonds",
+"percent":            9.1,
+"years_till_retirement": -3 
+},
+{
+ "age": 68,
+"type": "Short Term TIPS",
+"percent":            4.4,
+"years_till_retirement": -3 
+},
+{
+ "age": 69,
+"type": "US Stocks",
+"percent":           38.2,
+"years_till_retirement": -4 
+},
+{
+ "age": 69,
+"type": "International Stocks",
+"percent":           16.3,
+"years_till_retirement": -4 
+},
+{
+ "age": 69,
+"type": "US Bonds",
+"percent":             32,
+"years_till_retirement": -4 
+},
+{
+ "age": 69,
+"type": "International Bonds",
+"percent":            9.1,
+"years_till_retirement": -4 
+},
+{
+ "age": 69,
+"type": "Short Term TIPS",
+"percent":            4.4,
+"years_till_retirement": -4 
+},
+{
+ "age": 70,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -5 
+},
+{
+ "age": 70,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -5 
+},
+{
+ "age": 70,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -5 
+},
+{
+ "age": 70,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -5 
+},
+{
+ "age": 70,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -5 
+},
+{
+ "age": 71,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -6 
+},
+{
+ "age": 71,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -6 
+},
+{
+ "age": 71,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -6 
+},
+{
+ "age": 71,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -6 
+},
+{
+ "age": 71,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -6 
+},
+{
+ "age": 72,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -7 
+},
+{
+ "age": 72,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -7 
+},
+{
+ "age": 72,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -7 
+},
+{
+ "age": 72,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -7 
+},
+{
+ "age": 72,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -7 
+},
+{
+ "age": 73,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -8 
+},
+{
+ "age": 73,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -8 
+},
+{
+ "age": 73,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -8 
+},
+{
+ "age": 73,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -8 
+},
+{
+ "age": 73,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -8 
+},
+{
+ "age": 74,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -9 
+},
+{
+ "age": 74,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -9 
+},
+{
+ "age": 74,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -9 
+},
+{
+ "age": 74,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -9 
+},
+{
+ "age": 74,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -9 
+},
+{
+ "age": 75,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -10 
+},
+{
+ "age": 75,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -10 
+},
+{
+ "age": 75,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -10 
+},
+{
+ "age": 75,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -10 
+},
+{
+ "age": 75,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -10 
+},
+{
+ "age": 76,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -11 
+},
+{
+ "age": 76,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -11 
+},
+{
+ "age": 76,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -11 
+},
+{
+ "age": 76,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -11 
+},
+{
+ "age": 76,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -11 
+},
+{
+ "age": 77,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -12 
+},
+{
+ "age": 77,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -12 
+},
+{
+ "age": 77,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -12 
+},
+{
+ "age": 77,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -12 
+},
+{
+ "age": 77,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -12 
+},
+{
+ "age": 78,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -13 
+},
+{
+ "age": 78,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -13 
+},
+{
+ "age": 78,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -13 
+},
+{
+ "age": 78,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -13 
+},
+{
+ "age": 78,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -13 
+},
+{
+ "age": 79,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -14 
+},
+{
+ "age": 79,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -14 
+},
+{
+ "age": 79,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -14 
+},
+{
+ "age": 79,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -14 
+},
+{
+ "age": 79,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -14 
+},
+{
+ "age": 80,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -15 
+},
+{
+ "age": 80,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -15 
+},
+{
+ "age": 80,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -15 
+},
+{
+ "age": 80,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -15 
+},
+{
+ "age": 80,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -15 
+},
+{
+ "age": 81,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -16 
+},
+{
+ "age": 81,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -16 
+},
+{
+ "age": 81,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -16 
+},
+{
+ "age": 81,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -16 
+},
+{
+ "age": 81,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -16 
+},
+{
+ "age": 82,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -17 
+},
+{
+ "age": 82,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -17 
+},
+{
+ "age": 82,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -17 
+},
+{
+ "age": 82,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -17 
+},
+{
+ "age": 82,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -17 
+},
+{
+ "age": 83,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -18 
+},
+{
+ "age": 83,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -18 
+},
+{
+ "age": 83,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -18 
+},
+{
+ "age": 83,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -18 
+},
+{
+ "age": 83,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -18 
+},
+{
+ "age": 84,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -19 
+},
+{
+ "age": 84,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -19 
+},
+{
+ "age": 84,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -19 
+},
+{
+ "age": 84,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -19 
+},
+{
+ "age": 84,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -19 
+},
+{
+ "age": 85,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -20 
+},
+{
+ "age": 85,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -20 
+},
+{
+ "age": 85,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -20 
+},
+{
+ "age": 85,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -20 
+},
+{
+ "age": 85,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -20 
+},
+{
+ "age": 86,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -21 
+},
+{
+ "age": 86,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -21 
+},
+{
+ "age": 86,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -21 
+},
+{
+ "age": 86,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -21 
+},
+{
+ "age": 86,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -21 
+},
+{
+ "age": 87,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -22 
+},
+{
+ "age": 87,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -22 
+},
+{
+ "age": 87,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -22 
+},
+{
+ "age": 87,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -22 
+},
+{
+ "age": 87,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -22 
+},
+{
+ "age": 88,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -23 
+},
+{
+ "age": 88,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -23 
+},
+{
+ "age": 88,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -23 
+},
+{
+ "age": 88,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -23 
+},
+{
+ "age": 88,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -23 
+},
+{
+ "age": 89,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -24 
+},
+{
+ "age": 89,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -24 
+},
+{
+ "age": 89,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -24 
+},
+{
+ "age": 89,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -24 
+},
+{
+ "age": 89,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -24 
+},
+{
+ "age": 90,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -25 
+},
+{
+ "age": 90,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -25 
+},
+{
+ "age": 90,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -25 
+},
+{
+ "age": 90,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -25 
+},
+{
+ "age": 90,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -25 
+},
+{
+ "age": 91,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -26 
+},
+{
+ "age": 91,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -26 
+},
+{
+ "age": 91,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -26 
+},
+{
+ "age": 91,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -26 
+},
+{
+ "age": 91,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -26 
+},
+{
+ "age": 92,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -27 
+},
+{
+ "age": 92,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -27 
+},
+{
+ "age": 92,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -27 
+},
+{
+ "age": 92,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -27 
+},
+{
+ "age": 92,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -27 
+},
+{
+ "age": 93,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -28 
+},
+{
+ "age": 93,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -28 
+},
+{
+ "age": 93,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -28 
+},
+{
+ "age": 93,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -28 
+},
+{
+ "age": 93,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -28 
+},
+{
+ "age": 94,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -29 
+},
+{
+ "age": 94,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -29 
+},
+{
+ "age": 94,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -29 
+},
+{
+ "age": 94,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -29 
+},
+{
+ "age": 94,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -29 
+},
+{
+ "age": 95,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -30 
+},
+{
+ "age": 95,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -30 
+},
+{
+ "age": 95,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -30 
+},
+{
+ "age": 95,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -30 
+},
+{
+ "age": 95,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -30 
+},
+{
+ "age": 96,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -31 
+},
+{
+ "age": 96,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -31 
+},
+{
+ "age": 96,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -31 
+},
+{
+ "age": 96,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -31 
+},
+{
+ "age": 96,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -31 
+},
+{
+ "age": 97,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -32 
+},
+{
+ "age": 97,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -32 
+},
+{
+ "age": 97,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -32 
+},
+{
+ "age": 97,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -32 
+},
+{
+ "age": 97,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -32 
+},
+{
+ "age": 98,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -33 
+},
+{
+ "age": 98,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -33 
+},
+{
+ "age": 98,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -33 
+},
+{
+ "age": 98,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -33 
+},
+{
+ "age": 98,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -33 
+},
+{
+ "age": 99,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -34 
+},
+{
+ "age": 99,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -34 
+},
+{
+ "age": 99,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -34 
+},
+{
+ "age": 99,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -34 
+},
+{
+ "age": 99,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -34 
+},
+{
+ "age": 100,
+"type": "US Stocks",
+"percent":           29.5,
+"years_till_retirement": -35 
+},
+{
+ "age": 100,
+"type": "International Stocks",
+"percent":           12.6,
+"years_till_retirement": -35 
+},
+{
+ "age": 100,
+"type": "US Bonds",
+"percent":           34.8,
+"years_till_retirement": -35 
+},
+{
+ "age": 100,
+"type": "International Bonds",
+"percent":           11.6,
+"years_till_retirement": -35 
+},
+{
+ "age": 100,
+"type": "Short Term TIPS",
+"percent":           11.5,
+"years_till_retirement": -35 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .useInteractiveGuideline(true)
+  .margin({
+ "left":     80 
+})
+          
+        chart.xAxis
+  .axisLabel("Age")
+
+        
+        
+        chart.yAxis
+  .axisLabel("Percentage (%)")
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>
